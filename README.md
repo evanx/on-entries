@@ -15,7 +15,7 @@ require('on-entries')(emitter, {
 })
 ```
 
-See https://github.com/evanx/on-entries/blob/master/index.js
+See https://github.com/evanx/on-entries/blob/master/example/example.js
 
 ## Implementation
 
