@@ -1,22 +1,27 @@
 # on-entries
 
-## Example usage 
+Trivial utility for setting event listeners on an emitter.
+
+## Example usage
 
 ```javascript
-require('on-entries)(server, {
-  error(err) {
-    console.error(err)
-  },
-  end() {
-    console.log('ended')
-  }
+require('on-entries')(emitter, {
+   error(err) {
+      console.error(err)
+   },
+   end() {
+      console.log('ended')
+   },
 })
 ```
 
-## Implementation 
+See https://github.com/evanx/on-entries/blob/master/index.js
+
+## Implementation
+
+See https://github.com/evanx/on-entries/blob/master/index.js
 
 ```javascript
-module.exports = (emitter, handlers) => {
-  Object.entries(handlers).forEach(entry => emitter.on(...entry)
-}
+module.exports = (emitter, handlers) =>
+   Object.entries(handlers).forEach(entry => emitter.on(...entry))
 ```
