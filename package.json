@@ -4,7 +4,7 @@
    "description": "Trivial utility for setting event listeners on an emitter.",
    "main": "index.js",
    "scripts": {
-      "test": "node example/example.js"
+      "test": "node test/example.js"
    },
    "repository": {
       "type": "git",
